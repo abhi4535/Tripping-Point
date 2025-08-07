@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "method-override": "^3.0.0",
     "mongoose": "^8.17.0"
   }
 }

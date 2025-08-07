@@ -6,6 +6,17 @@
     <title>Show</title>
   </head>
   <body>
-    <h1>Showing campground</h1>
+    <h1><%= campground.title %></h1>
+    <h2><%= campground.location %></h2>
+    <form
+      action="/campgrounds/<%=campground._id %>?_method=DELETE"
+      method="POST"
+    >
+      <button>delete</button>
+    </form>
+    <footer>
+      <p><a href="/campgrounds/<%=campground._id %>/edit">edit</a></p>
+      <a href="/campgrounds">All Campgrounds</a>
+    </footer>
   </body>
 </html>
